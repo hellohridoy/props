@@ -1,10 +1,12 @@
 import React from "react";
 
 function Greet(props) {
-  const { name } = props;
+  const { name,id,children } = props;
+  console.log(props)
   return (
-    <div className="app">
-      <h1>My name is {name}</h1>;
+    <div >
+      <h1>My name is {name} id is {id}</h1>
+      {children}
     </div>
   );
 }
